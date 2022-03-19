@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                //Correct answer changes to green
+                let ButtonYes = document.querySelector('.ButtonYes');
+                ButtonYes.addEventListener('click', function() {
+                    ButtonYes.style.backgroundColor = '#31a855';
+                    document.querySelector('#answerText1').innerHTML = 'Correct!';
+                });
+                //Incorrect answers change to red
+                let ButtonNo = document.querySelectorAll('.ButtonNo'); {
+                for (let i = 0; i < ButtonNo.length; i++)
+                    ButtonNo[i].addEventListener('click', function() {
+                        ButtonNo[i].style.backgroundColor = '#ba594a';
+                        document.querySelector('#answerText1').innerHTML = 'Incorrect!';
+                    });
+            }
+            //wait for input from user in the text box
+            document.querySelector('#answer').addEventListener('click', function(){
+                let input = document.querySelector('input');
+                if(input.value === "Barcelona") {
+                    // response if correct
+                    input.style.backgroundColor = '#31a855';
+                    document.querySelector('#answerText2').innerHTML = 'Correct!';
+                } else {
+                    // response if incorrect
+                    input.style.backgroundColor = '#ba594a';
+                    document.querySelector('#answerText2').innerHTML = 'Incorrect!';
+                }
+            });
+        });
+        </script>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                    <h3>Question 1: In which continent are Chile, Argentina and Brazil? </h3>
+                    <button class="ButtonNo">North America</button>
+                    <button class="ButtonYes">South America</button>
+                    <button class="ButtonNo">Europe</button>
+                    <button class="ButtonNo">Asia</button>
+
+                    <p id="answerText1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which city were the 1992 Summer Olympics held? </h3>
+                <input type="text">
+                <button id="answer">Submit</button>
+
+                <p id="answerText2"></p>
+            </div>
+        </div>
+    </body>
+</html>

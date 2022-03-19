@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Home</title>
+        <meta name='viewport' content='intital-scale=1, width=device-width'>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <ul class="m-4 nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="/hobbies.html" style="background-color:yellow">Hobbies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="/sports.html">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="/travel.html">Travel</a>
+            </li>
+            </ul>
+        </div>
+        <div class="container-fluid text-center">
+            <h3> One of my hobbies is to play Magic: The Gathering with my friends. </h3>
+            <p class="content"> Click below to see a random Magic: The Gathering card.</p>
+                <a href="https://scryfall.com/random">
+                    <img title="Random card" alt="Random card" src="https://c3.scryfall.com/file/scryfall-content/share/random.svg" width="192" height="42"/>
+                </a>
+        </div>
+        <div class="container-fluid text-center mt-4">
+            <p class="content"> Alternatively use the search box below to search for a card.
+            <form action="https://scryfall.com/search?q=" class="mt-4" method="get">
+                <input autocomplete="off" autofocus class="form-control form-control-lg mb-4 mx-auto w-50" name="q" placeholder="Card" type="search">
+                <button class="btn btn-light" type="submit">Search</button>
+
+    </body>
+</html>

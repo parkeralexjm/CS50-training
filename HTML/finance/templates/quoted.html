@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <h2>Stock Quotes</h2>
+    <table class= "table tablestriped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> {{ quotes["name"] }}</td>
+                <td> {{ quotes["price"] | usd }}</td>
+                <td> {{ quotes["symbol"]}}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

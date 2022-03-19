@@ -1,0 +1,1 @@
+SELECT title FROM (SELECT title FROM movies, people, stars WHERE movies.id = stars.movie_id AND people.id = stars.person_id AND name IN("Johnny Depp", "Helena Bonham Carter")) GROUP BY title HAVING COUNT(title)>1;

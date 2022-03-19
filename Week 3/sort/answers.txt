@@ -1,0 +1,45 @@
+sort1 uses: bubble sort
+
+How do you know?: Bubble sort has the longest times for both random50000 and reversed50000 but comparable times for sorted
+
+sort2 uses: merge sort
+
+How do you know?: sort2 has much faster completion times than sort1 or sort2 indicating it is running at (n log n)
+
+sort3 uses: selection sort
+
+How do you know?: Times for each of the sorts are similar, even when already sorted as selection must go through all
+the digits in the list
+
+sort1
+r5000 - 0.123s
+r10000 - 0.371s
+r50000 - 7.359s
+Rev5000 - 0.068s
+Rev10000 - 0.221
+Rev50000 - 5.719s
+Sorted5000 - 0.036s
+Sorted10000 - 0.09s
+Sorted50000 - 0.450s
+
+sort2
+r5000 - 0.026s
+r10000 - 0.105s
+r50000 -  0.408s
+Rev5000 - 0.011s
+Rev10000 - 0.037s
+Rev50000 - 0.162s
+Sorted5000 - 0.033s
+Sorted10000 - 0.05s
+Sorted50000 - 0.4s
+
+sort3
+r5000 - 0.065s
+r10000 - 0.176s
+r50000 - 3.305
+Rev5000 - 0.073s
+Rev10000 - 0.222s
+Rev50000 - 3.183s
+Sorted5000 - 0.048s
+Sorted10000 - 0.184
+Sorted50000 - 3.006
